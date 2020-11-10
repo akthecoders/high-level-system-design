@@ -44,3 +44,18 @@ Single system handle everythin - Multiple system have there individual responsib
 </br>Sharding
 
 Paritioning the load between multiple servers.
+It have a problem of Joins, which is very tough.
+
+</br>Distrubuted Caching
+
+Benefits of using Caching ?
+1) Save Network Calls
+2) Save Recomputations
+3) Reduce DB Load
+4) Speedup Responses
+
+Cache Policy -> How to insert and delete data from the cache.
+1) LRU
+2) RFU
+
+Write Through and Write Back Cache
