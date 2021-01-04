@@ -59,3 +59,38 @@ Cache Policy -> How to insert and delete data from the cache.
 2) RFU
 
 Write Through and Write Back Cache
+
+
+System Design
+
+Requirement Section
+    Functional Requirements
+        Instead of just lines, we can write as apis
+        Ex: 
+        Add new Board createUser(userId, userObject) userId
+    
+
+    Non Functional Requirements 
+        Requirements which we don't have to take in account
+        Assumptions 
+
+Scaling
+    Bandwith Estimation
+    Storage Requirement
+
+CAP Theorem
+    CP System 
+    AP System
+
+Choosing and Reason to Choose it
+
+DataBase Designing
+    While Designing DB , do not write all the details of tables, just write the important one and leave the rest as per the time.
+Tip:Learn the limits of the particular db, its limits etc.
+
+While Designing the Diagram of System Design
+1) Can use Draw.io or google board
+2) Talk about the tradeoffs in the system
+3) Talk about regions and other things which you are doing.
+
+
