@@ -93,4 +93,77 @@ While Designing the Diagram of System Design
 2) Talk about the tradeoffs in the system
 3) Talk about regions and other things which you are doing.
 
+1) Caching - Put the cache in between Microservices
+2) Search
+3) Recommendation System
+4) SideCar - Put a sidecar box in the API for sending metric to external API for loggging.
+5) Notification 
+6) Service Discovery
+7) Inter service communication is via queue if response comes in more time approx 1 ms, else we can make is synchronous.
+8) Service Registery -> Where all microservices register itself
+9) API Gateway
+10) Circuit Breaking -> Circuit breaking is a portion create in the side of microservice.
+    It supports that if a service which the current node is calling, gets fail. then the circuit breaker in the current node
+    can do various operation instead of returning error.
+    1) Can return cached response.
+    2) Can redirect the request to another alternative (temp) API.
+    3) Help in recovering the failed node -> it keeps checking the failed node , if it has come up or not.
+11) Service Mesh - 
+    It is an extra component which runs parallel to every Microservice which helps in. We can use Sidecar pattern, where every microservice will have an instance of Service mesh.
+    We make call to another microservice via the service mesh, In short we will call the service mesh and it will inturn call the other api. 
+    - Load Balancing
+    - Service Discovery
+    - Metrics
+    - Retry
+    - Circuit Breaking
+    - Timeout
+
+Microservice Deployment Pattern
+Things which we want to achieve
+- Scalabitliy and throughput
+- Reliable & Available
+- Isolation
+- Resource Limit
+- Monitor
+- Cost Effective
+
+Patterns
+1) Multiple Services per Host -> run more than one MC on single VM.
+    Adv:
+        Efficient resource utilization
+        Fast Deployment
+    Dis:
+        Poor Isolation
+        No resource limit
+        Dependency conflict
+
+2) Service per Containers/VM
+Adv:
+    Isolation & Secure
+    Manegable
+    Fast
+    AutoScaling
+Dist:
+    Slow(Only with VMs not with containers)
+
+3) Serverless
+Adv:
+    Focus on code only
+    No worries about scaling
+    Pay as you go
+Dis:
+    Runtime support
+    Expensive
+    Vendor lock
+    Debugging pain
+    Stateless and short running process only.
+
+## Distributed Transactions
+1) 2 Phase
+2) 3 Phase
+3) Saga
+ 
+## Chaios Enginerring
+
+## Chap Netflix
 
